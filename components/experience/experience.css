@@ -1,0 +1,138 @@
+.exp-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 22px 10px 22px;
+    margin: 0;
+}
+
+.exp-heading h2 {
+    font-size: 20px;
+}
+
+.exp-heading p {
+    font-size: 14px;
+    color: rgb(81, 78, 78);
+    margin-bottom: -0px;
+}
+
+.p {
+    text-align: start;
+    padding: 10px 22px 10px 22px;
+}
+
+.experience h1 {
+    position: relative;
+    font-size: 40px;
+}
+
+.experience h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 35.5%;
+    height: 2px;
+    background: linear-gradient(90deg, #9A33FF, #FF8660);
+}
+
+.experience h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 35.5%;
+    height: 2px;
+    background: linear-gradient(90deg, #9A33FF, #FF8660);
+}
+
+@media (max-width:1056px) {
+    .experience h1 {
+        font-size: 38px;
+    }
+    .experience h1::before {
+        left: 28px;
+        width: 31%;
+    }
+    .experience h1::after {
+        right: 28px;
+        width: 31%;
+    }
+}
+
+@media (max-width:776px) {
+    .experience h1 {
+        font-size: 35px;
+    }
+    .experience h1::before {
+        left: 25px;
+        width: 27%;
+    }
+    .experience h1::after {
+        right: 25px;
+        width: 27%;
+    }
+    .exp-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 22px 5px 22px;
+    }
+    .exp-heading p {
+        margin-top: -10px;
+    }
+    .p li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:620px) {
+    .experience h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:576px) {
+    .experience h1 {
+        font-size: 30px;
+    }
+    .experience h1::before {
+        left: 25px;
+        width: 22%;
+    }
+    .experience h1::after {
+        right: 25px;
+        width: 22%;
+    }
+    .exp-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 22px 5px 22px;
+        text-align: start;
+    }
+    .exp-heading h2 {
+        font-size: 17px;
+    }
+    .exp-heading p {
+        margin-top: -10px;
+        font-size: 13px;
+    }
+    .p li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:450px) {
+    .experience h1 {
+        font-size: 23px;
+    }
+    .experience h1::before {
+        left: 20px;
+        width: 20%;
+    }
+    .experience h1::after {
+        right: 20px;
+        width: 20%;
+    }
+}

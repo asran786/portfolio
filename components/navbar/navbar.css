@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.navbar img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar-item li {
+    list-style-type: none;
+    color: white;
+    padding: 0px 10px 0 10px;
+    margin-top: 10px;
+}
+
+.button-burger {
+    display: none;
+}
+
+.ham-burger-1 {
+    display: none;
+}
+
+.ham-burger-2 {
+    display: none;
+}
+
+@media (max-width:1036px) {
+    .navbar-item {
+        width: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-item {
+        display: none;
+    }
+    .button-burger {
+        display: flex;
+        cursor: pointer;
+    }
+    .ham-burger-show {
+        display: flex;
+    }
+    .ham-burger-2 {
+        display: none;
+    }
+    .ham-burger-cross {
+        display: block;
+        cursor: pointer;
+    }
+    .side-navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 28%;
+        width: 100%;
+    }
+}

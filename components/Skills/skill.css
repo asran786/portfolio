@@ -1,0 +1,125 @@
+.skill-div {
+    margin-top: 30px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 14rem;
+    margin: 10px;
+    background-color: rgb(24, 23, 23);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card img {
+    width: 100px;
+}
+
+.card h2 {
+    background: linear-gradient(90deg, #9A33FF, #FF8660);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.skill-div h1 {
+    position: relative;
+    font-size: 40px;
+}
+
+.skill-div h1::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, #9A33FF, #FF8660);
+}
+
+.skill-div h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 40%;
+    height: 2px;
+    background: linear-gradient(90deg, #9A33FF, #FF8660);
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width:1056px) {
+    .skill-div h1::before {
+        width: 38%;
+    }
+    .skill-div h1::after {
+        right: 30px;
+        width: 38%;
+    }
+}
+
+@media (max-width:776px) {
+    .skill-div h1::before {
+        width: 34%;
+    }
+    .skill-div h1::after {
+        right: 30px;
+        width: 34%;
+    }
+}
+
+@media (max-width:576px) {
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill-div h1 {
+        font-size: 30px;
+    }
+    .skill-div h1::before {
+        left: 30px;
+        width: 30%;
+    }
+    .skill-div h1::after {
+        right: 30px;
+        width: 30%;
+    }
+}
+
+@media (max-width:450px) {
+    .skill-div h1 {
+        font-size: 25px;
+    }
+    .skill-div h1::before {
+        left: 20px;
+        width: 27%;
+    }
+    .skill-div h1::after {
+        right: 20px;
+        width: 27%;
+    }
+}
